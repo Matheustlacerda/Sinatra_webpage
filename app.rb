@@ -12,3 +12,7 @@ end
 get '/prs' do
   erb :prs
 end
+
+get '/education' do
+  erb :education
+end
