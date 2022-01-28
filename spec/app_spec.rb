@@ -31,4 +31,8 @@ describe 'Server Service' do
     expect(last_response).to be_ok
   end
 
+  it "returns status 404" do
+    get 'not_found'
+    expect(last_response.status).to eq 404
+  end
 end
